@@ -1,5 +1,5 @@
 # L04E02: Debug decorator
-Vytvořte modul `debug.py` obsahující `@debug` dekorátor, který při zavolání obalené funkce vypíše na standardní výstup seznam argumentů (`args`), seznam pojmenovaných argumentů (`kwargs`), název funkce a výsledek v následujícím formátu. 
+Vytvořte modul `debug.py` obsahující `@debug` dekorátor, který při zavolání obalené funkce vypíše na standardní výstup seznam argumentů (`args`), seznam pojmenovaných argumentů (`kwargs`), název funkce a výsledek v následujícím formátu. Zbytek funkce a její návratová hodnota funguje stejně.
 
 Pro získání hodnoty argumentu a výsledku použijte funkci `repr()`.
 
@@ -20,7 +20,7 @@ Příklad použití:
 def my_sum(a, b):
     return a + b
 
-my_sum(6, 9)
+assert my_sum(6, 9) + 2 == 17
 ```
 
 Na standardní výstup vypíše:
@@ -37,7 +37,7 @@ Result: 15
 def my_sum(a, b):
     return a + b
 
-my_sum(2, b=3)
+assert my_sum(2, b=3) + 2 == 7
 ```
 
 Na standardní výstup vypíše:
@@ -53,7 +53,7 @@ Result: 5
 def test():
     return 42
 
-test()
+assert test() == 42
 ```
 
 Na standardní výstup vypíše:
@@ -69,7 +69,7 @@ Result: 42
 def test():
     pass
 
-test()
+assert test() == None
 ```
 
 Na standardní výstup vypíše:
