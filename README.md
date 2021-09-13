@@ -11,6 +11,8 @@ repr(2)
 repr(sum(2, 3))
 ```
 
+---
+
 Příklad použití:
 
 ```python
