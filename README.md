@@ -27,6 +27,9 @@ Calling: my_sum(6, 9)
 Result: 5
 ```
 
+---
+
+
 ```python
 @debug
 def my_sum(a, b):
@@ -41,6 +44,8 @@ Calling: my_sum(2, b=3)
 Result: 5
 ```
 
+---
+
 ```python
 @debug
 def test():
@@ -54,6 +59,8 @@ Na standardní výstup vypíše:
 Calling: test()
 Result: 42
 ```
+
+---
 
 ```python
 @debug
