@@ -26,7 +26,7 @@ my_sum(6, 9)
 Na standardní výstup vypíše:
 ```
 Calling: my_sum(6, 9)
-Result: 5
+Result: 15
 ```
 
 ---
