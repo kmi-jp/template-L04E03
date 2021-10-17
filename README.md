@@ -3,6 +3,8 @@ Vytvořte modul `debug.py` obsahující `@debug` dekorátor, který při zavolá
 
 Pro získání hodnoty argumentu a výsledku použijte funkci `repr()`.
 
+Soubor `debug.py` nesmi obsahovat žádný jiný kód než je kód dekorátoru. Případně testování provádějte v jiných souborech, které nebudete do repozitáře commitovat.
+
 ```python
 # vrátí reprezentaci hodnoty 2
 repr(2)
