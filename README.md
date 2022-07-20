@@ -79,3 +79,10 @@ Na standardní výstup vypíše:
 Calling: test()
 Result: None
 ```
+
+## Lokální testování
+Funkčnost řešení ověříte následujícím příkazem:
+
+```bash
+pytest tests.py
+```
