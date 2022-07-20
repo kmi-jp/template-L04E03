@@ -51,3 +51,17 @@ def test_debug_no_return(capfd):
     assert "Calling: test()" in out
     assert "Result: None" in out
     assert result == None
+
+
+def test_assure_functools_wraps():
+    @debug
+    def test():
+        """Docstring"""
+        pass
+
+    assert test.__name__ == "test"
+    assert test.__doc__ is not None
+
+
+def test_docstrings():
+    assert debug.__doc__ is not None
